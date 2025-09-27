@@ -56,4 +56,139 @@
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      tra
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #f1f5f9;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      transition: 0.3s;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      text-align: center;
+    }
+    .stat {
+      flex: 1;
+      min-width: 150px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    }
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 600px;
+      margin: auto;
+    }
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      width: 100%;
+    }
+    button {
+      background: var(--primary);
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #2563eb;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--secondary);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Outsourcz</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#stats">Stats</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Talent Solutions for Your Business</h1>
+    <a href="#contact" class="btn">Get Started</a>
+  </div>
+
+  <section id="services">
+    <h2 style="text-align:center; margin-bottom:40px;">Our Services</h2>
+    <div class="services">
+      <div class="card">Staffing Solutions</div>
+      <div class="card">Executive Search</div>
+      <div class="card">Consulting</div>
+      <div class="card">Recruitment Strategy</div>
+    </div>
+  </section>
+
+  <section id="stats">
+    <h2 style="text-align:center; margin-bottom:40px;">Our Impact</h2>
+    <div class="stats">
+      <div class="stat">
+        <h3>100+</h3>
+        <p>Companies Served</p>
+      </div>
+      <div class="stat">
+        <h3>500+</h3>
+        <p>Placements</p>
+      </div>
+      <div class="stat">
+        <h3>95%</h3>
+        <p>Client Satisfaction</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 style="text-align:center; margin-bottom:40px;">Get In Touch</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Outsourcz. All rights reserved.
+  </footer>
+
+</body>
+</html>
